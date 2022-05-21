@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  title: string = 'task-tracker';
+  title: string = 'Task Tracker';
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  btnClick() {
+    console.log("btn clicked");
   }
 
 }
