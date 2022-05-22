@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   title: string = 'Task Tracker';
+  showForm: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
   btnClick() {
-    console.log("btn clicked");
+    this.showForm = !this.showForm;
   }
 
 }
